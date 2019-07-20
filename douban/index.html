@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://cdn.bootcss.com/normalize/7.0.0/normalize.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://img3.doubanio.com/f/shire/8b9fa55c839b74f72d2279a4f6839a2c8a1a9553/css/core/_init_.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>豆瓣</title>
+</head>
+<body>
+    <!-- 头部 -->
+    <div id="anony-nav">
+        <div class="anony-nav-links">
+            <ul>
+                <li><a href="#" class="lnk-book">读书</a></li>
+                <li><a href="#" class="lnk-movie">电影</a></li>
+                <li><a href="#" class="lnk-music">音乐</a></li>
+                <li><a href="#" class="lnk-group">小组</a></li>
+                <li><a href="#" class="lnk-events">同城</a></li>
+                <li><a href="#" class="lnk-fm">FM</a></li>
+                <li><a href="#" class="lnk-shijian">时间</a></li>
+                <li><a href="#" class="lnk-market">豆品</a></li>
+            </ul>
+        </div>
+        <h1>
+            <a href="#">豆瓣</a>
+        </h1>
+        <div class="anony-srh">
+            <form action="">
+                <span class="inp">
+                    <input type="text" maxlength="60" size="12" placeholder="书籍、电影、音乐、小组、小站、成员" name="q" autocomplete="off">
+                </span>
+                <span class="bn">
+                    <input type="submit" value="搜索">
+                </span>
+            </form>
+        </div>
+    </div>
+    <!-- 登录 -->
+    <div id="anony-reg-new" style="background-image: url(https://img3.doubanio.com/view/puppy_image/raw/public/16ad990ec23uwn790d4.jpg)">
+        <div class="wrapper">
+            <div class="login">
+                <iframe style="height: 300px; width: 300px" frameborder="0" src="https://accounts.douban.com/passport/login_popup?login_source=anony" frameborder="0"></iframe>
+            </div>
+            <div class="app">
+                <div class="app-title">豆瓣
+                    <span>6.0</span>
+                </div>
+                <div class="app-slogan"></div>
+                <a href="#" class="lnk-app">下载豆瓣 App</a>
+                <div class="app-qr">
+                    <a href="#" class="lnk-qr" id="expand-ar">
+                        <img src="https://img3.doubanio.com/f/sns/0c708de69ce692883c1310053c5748c538938cb0/pics/sns/anony_home/icon_qrcode_green.png" width="28" height="28" alt="">
+                    </a>
+                    <div class="app-qr-expand">
+                        <img src="https://img3.doubanio.com/f/sns/1cad523e614ec4ecb6bf91b054436bb79098a958/pics/sns/anony_home/doubanapp_qrcode.png" alt="">
+                        <p>iOS / Android 扫码直接下载</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

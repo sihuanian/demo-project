@@ -1,0 +1,275 @@
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+button,
+textarea,
+blockquote
+    margin 0
+    padding 0
+
+body
+    background-color #fff
+    color #000
+    font-family "BlueSkyStandard","Microsoft Yahei",Palatino,Arial,sans-serif
+    font-size 16px
+
+ul,
+ol 
+    list-style none
+
+a
+    text-decoration none
+    cursor pointer
+    color #000
+    box-sizing border-box
+
+.header 
+    padding 15px 40px
+    font-size 12px
+    font-weight 700
+    position relative
+    li
+        cursor pointer
+    .header-logo
+        position absolute
+        left 40px
+        top 20px
+        cursor pointer
+    .header-order
+        position absolute
+        right 40px
+        top 20px
+        width 126px
+        height 36px
+        padding 0 10px
+        margin 0 14px
+        font-size 14px
+        font-weight 700
+        text-align center
+        line-height 36px
+        color #000000
+        cursor pointer
+        border 2px solid #000
+        border-radius 100px
+        &:hover
+            background-color #000
+            a
+                color #fff
+    .header-nav
+        padding-left 162px        
+    .header-nav-level0 
+        display flex
+        align-items center
+        li
+            position relative
+            a:hover
+                &:after
+                    animation fadeIn .5s ease-out
+                    animation-fill-mode forwards
+            a:after
+                content ''
+                width 60%
+                margin 0 auto
+                height 2px
+                position absolute
+                left 50%
+                bottom -15px
+                transform translate(-50%)
+                box-sizing border-box
+        .header-nav-level0-li 
+            padding 10px 20px 10px 20px
+            margin-top 5px
+        .arrow
+            position relative
+            padding-left 45px
+            cursor default
+            z-index 10
+            ul
+                background-color #fff
+            &:hover
+                &:before
+                    transform rotate(135deg)
+            .car-limit,
+            .car-border
+                color #9b9b9b
+                cursor text
+            .car-border
+                position relative
+                padding-top 15px
+                &:after
+                    content ''
+                    width 89px
+                    position absolute
+                    top 0
+                    left 0
+                    border 1px solid rgba(0, 0, 0, .1)
+                    border-bottom 0
+            &:before
+                content ''
+                position absolute
+                left 20px
+                top 13px
+                width 5px
+                height 5px
+                border 2px solid rgba(50, 50, 50, .7)
+                border-width 0 0 2px 2px
+                transform rotate(-45deg)
+            ul
+                position absolute
+                left -1000px
+                width 100%
+                padding-top 18px
+                border-top 1px solid rgba(0,0,0,0.1)
+                border-radius 0 0 12px 12px
+                box-shadow 0 2px 4px 0 rgba(0,0,0,0.1)
+                li
+                    margin-bottom 12px
+                    padding 0 20px
+            &:hover
+                border-radius 12px 12px 0 0
+                box-shadow 0 2px 4px 0 rgba(0,0,0,0.1)
+        #car
+            width 25px
+            &:hover
+                .car
+                    position absolute
+                    left 0px
+                    top 36px
+        #service
+            width 50px
+            &:hover
+                .service
+                    position absolute
+                    left 0px
+                    top 36px
+        #nio
+            width 45px
+            &:hover
+                .nio
+                    position absolute
+                    left 0px
+                    top 36px
+
+@keyframes fadeIn {
+    form {
+        background-color #fff
+        bottom -15px
+    }
+    to {
+        background-color #13d4c8
+        bottom 0px
+    }
+}
+
+
+.jumbotron
+    font-size 0
+    padding-bottom 20px
+    position relative
+    img
+        width 100%
+    &-block-img
+        text-align center
+        img
+            width 288px
+    &-block
+        width 1171px
+        margin 0 auto
+        position absolute
+        top 150px
+        left 50%
+        transform translate(-50%)
+        p
+            font-size 22px
+            font-weight 400
+            color #fff
+            letter-spacing 27px
+            text-align center
+    &-block-a
+        font-size 16px
+        font-weight 700
+        display flex
+        justify-content center
+        a
+            color #fff
+            letter-spacing 2px
+            display block
+            text-align center
+            width 210px
+            height 46px
+            line-height 46px
+            padding 0 10px
+            border 2px solid #fff
+            border-radius 100px
+            &:hover
+                background-color #fff
+                color #000
+    &-block:last-of-type
+        position absolute
+        top 936px
+        left 50%
+
+
+
+
+
+
+@media screen and (min-width : 769px)
+    .picture
+        padding-left 20px
+        overflow hidden
+        .picture-item
+            float left
+            padding-bottom 15px
+            width 50%
+            position relative
+            .picture-block
+                position absolute
+                left 50%
+                top 130px
+                transform translate(-50%)
+                p,a
+                    color #fff
+                    text-align center
+                a
+                    display block
+                    margin 0 auto
+                    border 2px solid #fff
+                    border-radius 100px
+                    width 210px
+                    height 46px
+                    line-height 46px
+                    font-weight 700
+                    &:hover
+                        background-color #fff
+                        color #000
+                img
+                    width 188px
+        img
+            width calc(100% - 20px)
+
+@media screen and (max-width : 768px)
+    .picture
+        padding-left 0
+        overflow hidden
+        .picture-item
+            width 100%
+            padding-bottom 5px
+        img
+            width 100%
