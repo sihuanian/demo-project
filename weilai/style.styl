@@ -37,7 +37,6 @@ a
     text-decoration none
     cursor pointer
     color #000
-    box-sizing border-box
 
 .header 
     padding 15px 40px
@@ -178,6 +177,9 @@ a
 }
 
 
+.es6,.es8
+    position relative
+
 .jumbotron
     font-size 0
     padding-bottom 20px
@@ -191,8 +193,9 @@ a
     &-block
         width 1171px
         margin 0 auto
+        z-index 10
         position absolute
-        top 150px
+        top 120px
         left 50%
         transform translate(-50%)
         p
@@ -220,10 +223,7 @@ a
             &:hover
                 background-color #fff
                 color #000
-    &-block:last-of-type
-        position absolute
-        top 936px
-        left 50%
+   
 
 
 
@@ -242,11 +242,13 @@ a
             .picture-block
                 position absolute
                 left 50%
-                top 130px
+                top 60px
+                text-align center
                 transform translate(-50%)
                 p,a
                     color #fff
                     text-align center
+                    font-size 22px
                 a
                     display block
                     margin 0 auto
@@ -266,10 +268,148 @@ a
 
 @media screen and (max-width : 768px)
     .picture
-        padding-left 0
+        padding-left 0px
         overflow hidden
         .picture-item
             width 100%
             padding-bottom 5px
+            position relative
+            .picture-block
+                position absolute
+                left 50%
+                top 60px
+                text-align center
+                transform translate(-50%)
+                p,a
+                    color #fff
+                    text-align center
+                    font-size 22px
+                a
+                    display block
+                    margin 0 auto
+                    border 2px solid #fff
+                    border-radius 100px
+                    width 210px
+                    height 46px
+                    line-height 46px
+                    font-weight 700
+                    &:hover
+                        background-color #fff
+                        color #000
+                img
+                    width 188px
         img
             width 100%
+
+
+.carousel
+    position relative
+    overflow hidden
+    .carousel-pictures
+        width 400%
+        min-height 0
+        overflow hidden
+        li
+            width 25%
+            font-size 0
+            float left
+            img
+                width 100%
+    .dots
+        position absolute
+        left 50%
+        bottom 20px
+        margin-left -35px
+        ul
+            width 70px
+            display flex
+            justify-content space-around
+            li
+                width 10px
+                height 10px
+                background-color #00263c
+                border-radius 50%
+    .nio-app
+        position absolute
+        left 40%
+        top 185px
+        img
+            width 228px
+        .surpise
+            margin 25px 0
+            font-size 22px
+        p,a
+            color #ffffff
+        p
+            margin 0 0 20px
+        a
+            padding 0 10px
+            border 2px solid #ffffff
+            border-radius 100px
+            height 46px
+            line-height 46px
+            width 186px
+            display block
+            text-align center
+
+.app
+    text-align center
+    p
+        font-size 36px
+        font-weight 300
+        margin-top 80px
+    .app-download
+        margin-top 80px
+        .app-download-code
+            width 117px
+            margin-right 22px
+        .app-download-ios
+            width 160px
+            margin-bottom 30px
+
+.footer
+    .footer-companyInfo
+        padding 20px
+        overflow hidden
+        border-bottom 1px solid #dcdcdc
+        .footer-company-address
+            float left
+            strong,span,a
+                margin-right 10px
+                font-size 14px
+            a
+                letter-spacing 2px
+                &:hover
+                    text-decoration underline
+        .footer-compony-tel
+            float right
+            span
+                font-size 25px
+                margin-right 5px
+            .icon-icons-china
+                color #f1361d
+                width 75px
+            .china
+                border-left 1px solid #e3e3e3
+                margin-left 10px
+                &:before
+                    content 'CN'
+                    font-size 14px
+                    display inline-block
+                    color #000
+                    vertical-align middle
+                    margin-bottom 9px
+                    margin-left 15px
+    .footer-bottom
+        text-align center
+        padding 20px 0
+        a,span 
+            font-size 14px
+            color #d0d0d0
+        img
+            vertical-align middle
+            margin 0 5px 0 20px
+
+                    
+
+

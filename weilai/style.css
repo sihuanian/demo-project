@@ -37,7 +37,6 @@ a {
   text-decoration: none;
   cursor: pointer;
   color: #000;
-  box-sizing: border-box;
 }
 .header {
   padding: 15px 40px;
@@ -188,6 +187,10 @@ a {
   left: 0px;
   top: 36px;
 }
+.es6,
+.es8 {
+  position: relative;
+}
 .jumbotron {
   font-size: 0;
   padding-bottom: 20px;
@@ -205,8 +208,9 @@ a {
 .jumbotron-block {
   width: 1171px;
   margin: 0 auto;
+  z-index: 10;
   position: absolute;
-  top: 150px;
+  top: 120px;
   left: 50%;
   transform: translate(-50%);
 }
@@ -239,11 +243,6 @@ a {
   background-color: #fff;
   color: #000;
 }
-.jumbotron-block:last-of-type {
-  position: absolute;
-  top: 936px;
-  left: 50%;
-}
 @media screen and (min-width: 769px) {
   .picture {
     padding-left: 20px;
@@ -258,13 +257,15 @@ a {
   .picture .picture-item .picture-block {
     position: absolute;
     left: 50%;
-    top: 130px;
+    top: 60px;
+    text-align: center;
     transform: translate(-50%);
   }
   .picture .picture-item .picture-block p,
   .picture .picture-item .picture-block a {
     color: #fff;
     text-align: center;
+    font-size: 22px;
   }
   .picture .picture-item .picture-block a {
     display: block;
@@ -289,16 +290,186 @@ a {
 }
 @media screen and (max-width: 768px) {
   .picture {
-    padding-left: 0;
+    padding-left: 0px;
     overflow: hidden;
   }
   .picture .picture-item {
     width: 100%;
     padding-bottom: 5px;
+    position: relative;
+  }
+  .picture .picture-item .picture-block {
+    position: absolute;
+    left: 50%;
+    top: 60px;
+    text-align: center;
+    transform: translate(-50%);
+  }
+  .picture .picture-item .picture-block p,
+  .picture .picture-item .picture-block a {
+    color: #fff;
+    text-align: center;
+    font-size: 22px;
+  }
+  .picture .picture-item .picture-block a {
+    display: block;
+    margin: 0 auto;
+    border: 2px solid #fff;
+    border-radius: 100px;
+    width: 210px;
+    height: 46px;
+    line-height: 46px;
+    font-weight: 700;
+  }
+  .picture .picture-item .picture-block a:hover {
+    background-color: #fff;
+    color: #000;
+  }
+  .picture .picture-item .picture-block img {
+    width: 188px;
   }
   .picture img {
     width: 100%;
   }
+}
+.carousel {
+  position: relative;
+  overflow: hidden;
+}
+.carousel .carousel-pictures {
+  width: 400%;
+  min-height: 0;
+  overflow: hidden;
+}
+.carousel .carousel-pictures li {
+  width: 25%;
+  font-size: 0;
+  float: left;
+}
+.carousel .carousel-pictures li img {
+  width: 100%;
+}
+.carousel .dots {
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  margin-left: -35px;
+}
+.carousel .dots ul {
+  width: 70px;
+  display: flex;
+  justify-content: space-around;
+}
+.carousel .dots ul li {
+  width: 10px;
+  height: 10px;
+  background-color: #00263c;
+  border-radius: 50%;
+}
+.carousel .nio-app {
+  position: absolute;
+  left: 40%;
+  top: 185px;
+}
+.carousel .nio-app img {
+  width: 228px;
+}
+.carousel .nio-app .surpise {
+  margin: 25px 0;
+  font-size: 22px;
+}
+.carousel .nio-app p,
+.carousel .nio-app a {
+  color: #fff;
+}
+.carousel .nio-app p {
+  margin: 0 0 20px;
+}
+.carousel .nio-app a {
+  padding: 0 10px;
+  border: 2px solid #fff;
+  border-radius: 100px;
+  height: 46px;
+  line-height: 46px;
+  width: 186px;
+  display: block;
+  text-align: center;
+}
+.app {
+  text-align: center;
+}
+.app p {
+  font-size: 36px;
+  font-weight: 300;
+  margin-top: 80px;
+}
+.app .app-download {
+  margin-top: 80px;
+}
+.app .app-download .app-download-code {
+  width: 117px;
+  margin-right: 22px;
+}
+.app .app-download .app-download-ios {
+  width: 160px;
+  margin-bottom: 30px;
+}
+.footer .footer-companyInfo {
+  padding: 20px;
+  overflow: hidden;
+  border-bottom: 1px solid #dcdcdc;
+}
+.footer .footer-companyInfo .footer-company-address {
+  float: left;
+}
+.footer .footer-companyInfo .footer-company-address strong,
+.footer .footer-companyInfo .footer-company-address span,
+.footer .footer-companyInfo .footer-company-address a {
+  margin-right: 10px;
+  font-size: 14px;
+}
+.footer .footer-companyInfo .footer-company-address a {
+  letter-spacing: 2px;
+}
+.footer .footer-companyInfo .footer-company-address a:hover {
+  text-decoration: underline;
+}
+.footer .footer-companyInfo .footer-compony-tel {
+  float: right;
+}
+.footer .footer-companyInfo .footer-compony-tel span {
+  font-size: 25px;
+  margin-right: 5px;
+}
+.footer .footer-companyInfo .footer-compony-tel .icon-icons-china {
+  color: #f1361d;
+  width: 75px;
+}
+.footer .footer-companyInfo .footer-compony-tel .china {
+  border-left: 1px solid #e3e3e3;
+  margin-left: 10px;
+}
+.footer .footer-companyInfo .footer-compony-tel .china:before {
+  content: 'CN';
+  font-size: 14px;
+  display: inline-block;
+  color: #000;
+  vertical-align: middle;
+  margin-bottom: 9px;
+  margin-left: 15px;
+}
+.footer .footer-bottom {
+  text-align: center;
+  padding: 20px 0;
+}
+.footer .footer-bottom a,
+.footer .footer-bottom span {
+  font-size: 14px;
+  color: #d0d0d0;
+}
+.footer .footer-bottom img {
+  vertical-align: middle;
+  margin: 0 5px 0 20px;
 }
 @-moz-keyframes fadeIn {
   form {
