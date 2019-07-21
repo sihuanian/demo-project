@@ -116,7 +116,6 @@ a {
   position: absolute;
   left: -1000px;
   width: 100%;
-  z-index: 20;
   padding-top: 18px;
   border-top: 1px solid rgba(0,0,0,0.1);
   border-radius: 0 0 12px 12px;
@@ -238,7 +237,6 @@ a {
 .jumbotron-block {
   width: 100%;
   margin: 0 auto;
-  z-index: 10;
   position: absolute;
   top: 120px;
   left: 50%;
