@@ -113,43 +113,10 @@ a {
 }
 .header .header-nav-level0 .arrow ul {
   background-color: #fff;
-}
-.header .header-nav-level0 .arrow:hover:before {
-  transform: rotate(135deg);
-}
-.header .header-nav-level0 .arrow .car-limit,
-.header .header-nav-level0 .arrow .car-border {
-  color: #9b9b9b;
-  cursor: text;
-}
-.header .header-nav-level0 .arrow .car-border {
-  position: relative;
-  padding-top: 15px;
-}
-.header .header-nav-level0 .arrow .car-border:after {
-  content: '';
-  width: 89px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  border: 1px solid rgba(0,0,0,0.1);
-  border-bottom: 0;
-}
-.header .header-nav-level0 .arrow:before {
-  content: '';
-  position: absolute;
-  left: 20px;
-  top: 13px;
-  width: 5px;
-  height: 5px;
-  border: 2px solid rgba(50,50,50,0.7);
-  border-width: 0 0 2px 2px;
-  transform: rotate(-45deg);
-}
-.header .header-nav-level0 .arrow ul {
   position: absolute;
   left: -1000px;
   width: 100%;
+  z-index: 20;
   padding-top: 18px;
   border-top: 1px solid rgba(0,0,0,0.1);
   border-radius: 0 0 12px 12px;
@@ -162,6 +129,25 @@ a {
 .header .header-nav-level0 .arrow:hover {
   border-radius: 12px 12px 0 0;
   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.1);
+}
+.header .header-nav-level0 .arrow:hover:before {
+  transform: rotate(135deg);
+}
+.header .header-nav-level0 .arrow .car-limit,
+.header .header-nav-level0 .arrow .car-border {
+  color: #9b9b9b;
+  cursor: text;
+}
+.header .header-nav-level0 .arrow:before {
+  content: '';
+  position: absolute;
+  left: 20px;
+  top: 13px;
+  width: 5px;
+  height: 5px;
+  border: 2px solid rgba(50,50,50,0.7);
+  border-width: 0 0 2px 2px;
+  transform: rotate(-45deg);
 }
 .header .header-nav-level0 #car {
   width: 25px;
@@ -187,6 +173,50 @@ a {
   left: 0px;
   top: 36px;
 }
+@media screen and (max-width: 1024px) {
+  .header {
+    background-color: rgba(0,0,0,0.4);
+    width: 100%;
+    box-sizing: border-box;
+    padding: 8px 15px;
+    z-index: 20;
+    position: fixed;
+    top: 0;
+  }
+  .header-logo,
+  .header-nav,
+  .header-order {
+    display: none;
+  }
+  .header-logoMini {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header-logoMini .header-logoMini-nav {
+    display: flex;
+  }
+  .header-logoMini .header-logoMini-nav a {
+    border: 1px solid #fff;
+    color: #fff;
+    display: inline-block;
+    padding: 5px 18px 3px;
+    margin: 0 5px;
+    margin-right: 15px;
+    border-radius: 15px;
+  }
+  .header-logoMini .header-logoMini-nav .btn div {
+    height: 2px;
+    width: 20px;
+    background-color: #fff;
+    margin: 6px 0;
+  }
+}
+@media screen and (min-width: 1023px) {
+  .header-logoMini {
+    display: none;
+  }
+}
 .es6,
 .es8 {
   position: relative;
@@ -206,7 +236,7 @@ a {
   width: 288px;
 }
 .jumbotron-block {
-  width: 1171px;
+  width: 100%;
   margin: 0 auto;
   z-index: 10;
   position: absolute;
@@ -242,6 +272,17 @@ a {
 .jumbotron-block-a a:hover {
   background-color: #fff;
   color: #000;
+}
+@media screen and (max-width: 768px) {
+  .jumbotron-block {
+    width: 100%;
+    margin: 0 auto;
+    z-index: 10;
+    position: absolute;
+    top: 45px;
+    left: 50%;
+    transform: translate(-50%);
+  }
 }
 @media screen and (min-width: 769px) {
   .picture {
@@ -366,110 +407,256 @@ a {
   background-color: #00263c;
   border-radius: 50%;
 }
-.carousel .nio-app {
-  position: absolute;
-  left: 40%;
-  top: 185px;
+@media screen and (min-width: 981px) {
+  .nio-app {
+    position: absolute;
+    left: 40%;
+    top: 20%;
+  }
+  .nio-app img {
+    width: 228px;
+  }
+  .nio-app .surpise {
+    margin: 25px 0;
+    font-size: 22px;
+  }
+  .nio-app p,
+  .nio-app a {
+    color: #fff;
+  }
+  .nio-app p {
+    margin: 0 0 20px;
+  }
+  .nio-app a {
+    padding: 0 10px;
+    border: 2px solid #fff;
+    border-radius: 100px;
+    height: 46px;
+    line-height: 46px;
+    width: 186px;
+    display: block;
+    text-align: center;
+  }
 }
-.carousel .nio-app img {
-  width: 228px;
+@media screen and (max-width: 980px) {
+  .nio-app {
+    position: absolute;
+    left: 40%;
+    top: 5%;
+    text-align: center;
+  }
+  .nio-app img {
+    width: 180px;
+  }
+  .nio-app .surpise {
+    margin: 10px 0;
+    font-size: 16px;
+  }
+  .nio-app p,
+  .nio-app a {
+    color: #fff;
+    font-size: 14px;
+  }
+  .nio-app p {
+    margin: 0 0 10px;
+  }
+  .nio-app a {
+    padding: 0 10px;
+    border: 2px solid #fff;
+    border-radius: 100px;
+    height: 30px;
+    line-height: 30px;
+    width: 120px;
+    margin: 0 auto;
+    display: block;
+  }
 }
-.carousel .nio-app .surpise {
-  margin: 25px 0;
-  font-size: 22px;
+@media screen and (min-width: 768px) {
+  .app {
+    text-align: center;
+  }
+  .app p {
+    font-size: 36px;
+    font-weight: 300;
+    margin-top: 80px;
+  }
+  .app .app-download {
+    margin-top: 80px;
+  }
+  .app .app-download .app-download-code {
+    width: 117px;
+    margin-right: 22px;
+  }
+  .app .app-download .app-download-ios {
+    width: 160px;
+    margin-bottom: 30px;
+  }
 }
-.carousel .nio-app p,
-.carousel .nio-app a {
-  color: #fff;
+@media screen and (max-width: 767px) {
+  .app {
+    text-align: center;
+  }
+  .app p {
+    font-size: 24px;
+    font-weight: 300;
+    margin-top: 80px;
+  }
+  .app .app-download {
+    margin-top: 80px;
+  }
+  .app .app-download a {
+    display: block;
+  }
+  .app .app-download a .app-download-code {
+    width: 117px;
+    margin-right: 22px;
+    margin: 0 auto;
+  }
+  .app .app-download a .app-download-ios {
+    width: 160px;
+    margin: 35px 0 30px 0;
+  }
 }
-.carousel .nio-app p {
-  margin: 0 0 20px;
+@media screen and (min-width: 1024px) {
+  .footer .footer-companyInfo {
+    padding: 20px;
+    overflow: hidden;
+    border-bottom: 1px solid #dcdcdc;
+  }
+  .footer .footer-companyInfo .footer-company-address {
+    float: left;
+  }
+  .footer .footer-companyInfo .footer-company-address strong,
+  .footer .footer-companyInfo .footer-company-address span,
+  .footer .footer-companyInfo .footer-company-address a {
+    margin-right: 10px;
+    font-size: 14px;
+  }
+  .footer .footer-companyInfo .footer-company-address a {
+    letter-spacing: 2px;
+  }
+  .footer .footer-companyInfo .footer-company-address a:hover {
+    text-decoration: underline;
+  }
+  .footer .footer-companyInfo .footer-compony-tel {
+    float: right;
+  }
+  .footer .footer-companyInfo .footer-compony-tel span {
+    font-size: 25px;
+    margin-right: 5px;
+    color: #000;
+  }
+  .footer .footer-companyInfo .footer-compony-tel .icon-icons-china {
+    color: #f1361d;
+    width: 75px;
+  }
+  .footer .footer-companyInfo .footer-compony-tel .china {
+    border-left: 1px solid #e3e3e3;
+    margin-left: 10px;
+  }
+  .footer .footer-companyInfo .footer-compony-tel .china:before {
+    content: 'CN';
+    font-size: 14px;
+    display: inline-block;
+    color: #000;
+    vertical-align: middle;
+    margin-bottom: 9px;
+    margin-left: 15px;
+  }
+  .footer .footer-bottom {
+    text-align: center;
+    padding: 20px 0;
+    a: , span;
+  }
+  .footer a,
+  .footer span {
+    a: , span;
+  }
+  .footer a a,
+  .footer span a,
+  .footer a span,
+  .footer span span {
+    font-size: 14px;
+    color: #d0d0d0;
+  }
+  .footer a img,
+  .footer span img {
+    vertical-align: middle;
+    margin: 0 5px 0 20px;
+  }
 }
-.carousel .nio-app a {
-  padding: 0 10px;
-  border: 2px solid #fff;
-  border-radius: 100px;
-  height: 46px;
-  line-height: 46px;
-  width: 186px;
-  display: block;
-  text-align: center;
-}
-.app {
-  text-align: center;
-}
-.app p {
-  font-size: 36px;
-  font-weight: 300;
-  margin-top: 80px;
-}
-.app .app-download {
-  margin-top: 80px;
-}
-.app .app-download .app-download-code {
-  width: 117px;
-  margin-right: 22px;
-}
-.app .app-download .app-download-ios {
-  width: 160px;
-  margin-bottom: 30px;
-}
-.footer .footer-companyInfo {
-  padding: 20px;
-  overflow: hidden;
-  border-bottom: 1px solid #dcdcdc;
-}
-.footer .footer-companyInfo .footer-company-address {
-  float: left;
-}
-.footer .footer-companyInfo .footer-company-address strong,
-.footer .footer-companyInfo .footer-company-address span,
-.footer .footer-companyInfo .footer-company-address a {
-  margin-right: 10px;
-  font-size: 14px;
-}
-.footer .footer-companyInfo .footer-company-address a {
-  letter-spacing: 2px;
-}
-.footer .footer-companyInfo .footer-company-address a:hover {
-  text-decoration: underline;
-}
-.footer .footer-companyInfo .footer-compony-tel {
-  float: right;
-}
-.footer .footer-companyInfo .footer-compony-tel span {
-  font-size: 25px;
-  margin-right: 5px;
-}
-.footer .footer-companyInfo .footer-compony-tel .icon-icons-china {
-  color: #f1361d;
-  width: 75px;
-}
-.footer .footer-companyInfo .footer-compony-tel .china {
-  border-left: 1px solid #e3e3e3;
-  margin-left: 10px;
-}
-.footer .footer-companyInfo .footer-compony-tel .china:before {
-  content: 'CN';
-  font-size: 14px;
-  display: inline-block;
-  color: #000;
-  vertical-align: middle;
-  margin-bottom: 9px;
-  margin-left: 15px;
-}
-.footer .footer-bottom {
-  text-align: center;
-  padding: 20px 0;
-}
-.footer .footer-bottom a,
-.footer .footer-bottom span {
-  font-size: 14px;
-  color: #d0d0d0;
-}
-.footer .footer-bottom img {
-  vertical-align: middle;
-  margin: 0 5px 0 20px;
+@media screen and (max-width: 1023px) {
+  .footer .footer-companyInfo {
+    padding: 45px 40px 30px;
+    overflow: hidden;
+    margin-top: 75px;
+    border-top: 1px solid #dcdcdc;
+  }
+  .footer .footer-companyInfo .footer-company-address {
+    text-align: center;
+  }
+  .footer .footer-companyInfo .footer-company-address strong,
+  .footer .footer-companyInfo .footer-company-address span,
+  .footer .footer-companyInfo .footer-company-address a {
+    display: block;
+    margin: 0 10px 5px 0;
+    font-size: 14px;
+    font-weight: 700;
+  }
+  .footer .footer-companyInfo .footer-company-address a {
+    letter-spacing: 2px;
+  }
+  .footer .footer-companyInfo .footer-company-address a:hover {
+    text-decoration: underline;
+  }
+  .footer .footer-companyInfo .footer-compony-tel {
+    text-align: center;
+    margin-top: 40px;
+  }
+  .footer .footer-companyInfo .footer-compony-tel span {
+    font-size: 25px;
+    margin-right: 5px;
+  }
+  .footer .footer-companyInfo .footer-compony-tel .icon-icons-china {
+    color: #f1361d;
+    width: 75px;
+  }
+  .footer .footer-companyInfo .footer-compony-tel .china {
+    margin: 40px auto 10px;
+    display: block;
+    width: 75px;
+    height: 35px;
+    line-height: 35px;
+    box-sizing: border-box;
+    border: 1px solid #e3e3e3;
+  }
+  .footer .footer-companyInfo .footer-compony-tel .china:before {
+    content: 'CN';
+    font-size: 14px;
+    display: inline-block;
+    color: #000;
+    vertical-align: middle;
+    margin-bottom: 9px;
+    margin-left: 5px;
+  }
+  .footer .footer-bottom {
+    text-align: center;
+    padding: 20px 0;
+  }
+  .footer .footer-bottom a {
+    font-size: 14px;
+    color: #d0d0d0;
+  }
+  .footer .footer-bottom a:before {
+    content: '© NIO 2019';
+    color: #000;
+    font-weight: 700;
+    padding-right: 15px;
+  }
+  .footer .footer-bottom img,
+  .footer .footer-bottom span {
+    display: none;
+  }
 }
 @-moz-keyframes fadeIn {
   form {
