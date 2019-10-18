@@ -1,27 +1,43 @@
 <template>
   <div class="text-center">
-    <form action="" class="regist">
         <div>
-            <div class="title">欢迎注册</div>
+            <div class="title">欢迎登录</div>
             <div class="content-one">
-                <input type="text" id="username" placeholder="请输入用户名" required>
+                <el-input v-model="username" placeholder="请输入你的用户名"></el-input>
             </div>
 
             <div class="content-two">
-                <input type="password" id="pwd" placeholder="请输入密码" required>
+                <el-input placeholder="请输入密码"  v-model="password" show-password></el-input>
             </div>
 
             <div class="button">
-                <input type="submit" value="立即注册" class="submit">
+                <input type="submit" value="立即登录" class="submit" @click="login">
             </div>
         </div>
-    </form>
 </div>
 </template>
 
 <script>
 export default {
-
+  data () {
+    return {
+      username: '',
+      password: ''
+    }
+  },
+  methods: {
+    login () {
+      if (this.username === 'sihuanian' && this.password === '123456') {
+        this.$store.dispatch('user/login', {
+          username: this.username,
+          password: this.password
+        })
+        this.$router.back()
+      } else {
+        alert('用户名或密码错误')
+      }
+    }
+  }
 }
 </script>
 
@@ -30,15 +46,17 @@ export default {
   margin-top 150px
   .title
     font-size 44px
-  input
-    width 438px
-    height 50px
+  .submit,.el-input
+    width 478px
+    height 60px
     outline none
     font-size 20px
-    padding 0 20px
-    border 1px solid #aaa
     border-radius 4px
-    line-height 50px
+    line-height 60px
+    box-sizing border-box
+  input
+    border 1px solid #aaa
+    padding 0 20px
   .content-one
     margin-top 50px
 
@@ -46,8 +64,6 @@ export default {
     margin 50px auto
 
   .submit
-    width 478px
-    height 60px
     color #fff
     font-size 24px
     border 1px #3083ff solid
