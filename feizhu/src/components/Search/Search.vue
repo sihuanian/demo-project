@@ -25,9 +25,10 @@ export default {
 
 <style scoped lang="stylus">
 div.clearfix
-  margin-top 10px
+  padding-top 10px
   overflow hidden
   position relative
+  background-color #fff
 .search-container
   float left
   width 89px
