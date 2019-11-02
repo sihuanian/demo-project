@@ -5,12 +5,18 @@ import App from './App'
 import router from './router'
 import store from './store/index'
 import VueLazyLoad from 'vue-lazyload'
-import ElementUI from 'element-ui'
-import 'element-ui/lib/theme-chalk/index.css'
+import VueJsonp from 'vue-jsonp' // jsonp
+import 'babel-polyfill' // 浏览器兼容
+Vue.use(VueJsonp, 5000)
 
-Vue.use(ElementUI)
 Vue.use(VueLazyLoad)
 Vue.config.productionTip = false
+// 标签面的文字 => head 中的 title
+router.beforeEach((to, from, next) => {
+  // console.log(to)
+  document.title = to.meta.title
+  next()
+})
 
 /* eslint-disable no-new */
 new Vue({
