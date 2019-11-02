@@ -1,5 +1,6 @@
 <template>
-  <div class="input-container clearfix">
+  <div class="wrapper">
+    <div class="input-container clearfix">
     <div class="logo">
       <a href="javascritp:;">
         <img src="//gw.alicdn.com/bao/tfs/TB1mFZneMmH3KVjSZKzXXb2OXXa-748-467.png" style="margin-top: -13px;" width="121px" height="75px" alt="">
@@ -23,6 +24,7 @@
       <span class="detail">查看</span>
     </div>
   </div>
+  </div>
 </template>
 
 <script>
@@ -41,9 +43,12 @@ export default {
 </script>
 
 <style scoped lang="stylus">
+.wrapper
+  background-color #fff
+  margin 0 auto
 .input-container
   position relative
-  margin-bottom 15px
+  padding-bottom 15px
   .logo
     width 230px
     height 53px
