@@ -8,12 +8,12 @@
 </template>
 
 <script>
-import "swiper/dist/css/swiper.css"
+import 'swiper/dist/css/swiper.css'
 
-import { swiper, swiperSlide } from "vue-awesome-swiper"
+import { swiper, swiperSlide } from 'vue-awesome-swiper'
 
 export default {
-  data() {
+  data () {
     return {
       swiperSlides: [
         { imgUrl: 'https://img.alicdn.com/tfs/TB1HLf.khz1gK0jSZSgXXavwpXa-490-300.jpg' },
@@ -25,11 +25,14 @@ export default {
       ],
       swiperOption: {
         pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
+          el: '.swiper-pagination'
         },
+        paginationClickable: true,
         autoplay: true,
-        loop: true
+        loop: true,
+        paginationBulletRender: function (swiper, index, className) {
+          return '<span class="' + className + '">' + (index + 1) + '</span>'
+        }
       }
     }
   },
@@ -45,4 +48,7 @@ export default {
   display inline-block
   width 498px
   height 300px
+.swiper-pagination-bullet
+  width 18px !important
+  height 18px !important
 </style>
