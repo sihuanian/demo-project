@@ -18,5 +18,5 @@ Mock.mock('/ratings', {code: 0, data: data.ratings})
 Mock.mock('/info', {code: 0, data: data.info})
 */
 
-console.log('执行了mockServer')
-console.log(ZX)
+// console.log('执行了mockServer')
+// console.log(ZX)
