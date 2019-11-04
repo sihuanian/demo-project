@@ -1,32 +1,34 @@
 <template>
   <div id="app">
-    <my-header />
+    <!-- <my-header />
+    <my-input />
+    <my-navBar /> -->
     <router-view/>
   </div>
 </template>
 
 <script>
-import MyHeader from '@/components/Header/Header.vue'
+// import MyHeader from '@/components/Header/Header.vue'
+// import MyInput from '@/components/Input/Input.vue'
+// import MyNavBar from '@/components/NavBar/NavBar.vue'
 export default {
   name: 'App',
   components: {
-    MyHeader
+    // MyHeader,
+    // MyInput,
+    // MyNavBar
   }
 }
 </script>
 
 <style>
-#app {
-  text-align: center;
+@import './style/global.css';
+.clearfix {
+  overflow: hidden;
+  width: 1190px;
+  margin: 0 auto;
 }
-ul, li {
-  list-style: none;
-}
-a {
-  color: #6C6C6C;
-  text-decoration: none;
-}
-#app {
-  text-align: center;
+body {
+  background-color: #f2f3f4;
 }
 </style>
