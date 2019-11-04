@@ -53,7 +53,7 @@ export default {
 .navbar
     height 36px
     position relative
-    z-index 9999
+    z-index 20
     padding-top 6px
     zoom 1
     box-sizing border-box
