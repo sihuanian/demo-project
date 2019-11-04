@@ -12,7 +12,8 @@
     </div>
     <div class="show-view">
       <div class="houhui" v-show="showDiscount">
-        <my-city :citys="citys" :fights="fights" />
+        <my-city :citys="citys" :ruleId="1971"/>
+        <my-city :citys="citys2" :ruleId="1987"/>
       </div>
       <div class="feizhu" v-show="showSpecial">
         <my-recommend v-for="(item, index) in views" :key="index" :field="item" />
@@ -33,8 +34,11 @@ export default {
       showDiscount: true,
       showSpecial: false,
       citys: ['北京', '上海', '广州', '西安', '成都', '深圳', '昆明', '重庆', '杭州', '武汉', '青岛', '长沙', '哈尔滨', '海口', '天津', '厦门'],
+      citys2: ['北京', '上海', '广州', '深圳', '杭州', '中国香港', '成都', '武汉', '昆明', '重庆'],
       // cityList: cityList,
-      views: []
+      views: [],
+      airplanes: [],
+      fights2: []
     }
   },
   props: {
@@ -44,6 +48,21 @@ export default {
   },
   created () {
     this.getData()
+    this.$jsonp('/api/rule/promotion', {
+      ruleId: 1987,
+      cityName: '北京',
+      queryCount: 10,
+      _input_charset: 'utf-8',
+      callback: 'jsonp_1572847750031_77335'
+    }).then(json => {
+      // Success.
+      this.fights2 = json.result
+      // console.log(json.result)
+      // console.log(this.fights2)
+    }).catch(err => {
+      // Failed.
+      console.log(err)
+    })
   },
   components: {
     MyRecommend,
@@ -63,7 +82,7 @@ export default {
     getData () {
       axios.get('/zhuanxian')
         .then(res => {
-          console.log('zhuanxian', res.data.data)
+          // console.log('zhuanxian', res.data.data)
           this.views = res.data.data
         })
     }
