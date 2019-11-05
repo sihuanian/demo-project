@@ -96,13 +96,13 @@ export default {
 .show-view
   padding 0 10px 6px
 .header
+  margin-bottom 12px
   background-color #fbfbfb
   overflow hidden
   padding 0 12px 0 18px
   .title
     float left
     font-size 18px
-    color #000
     color #000
     line-height 48px
     font-weight 500
@@ -126,19 +126,19 @@ export default {
         color #3d3d3d
         font-weight 500
     .bar
-      transition: transform 0.2s ease-in-out 0s, width 0.1s ease-out 0s;
-      transform-origin: center center;
-      width: 68px;
-      position: absolute;
-      left: 0;
-      bottom: 0;
-      height: 3px;
+      transition transform 0.2s ease-in-out 0s, width 0.1s ease-out 0s
+      transform-origin center center
+      width 68px
+      position absolute
+      left 0
+      bottom 0
+      height 3px
       &::after
         content ''
-        position: absolute;
+        position absolute
         background-color #ffc900
         width 100%
-        left: -32px;
-        bottom: 0;
-        height: 3px;
+        left -32px
+        bottom 0
+        height 3px
 </style>

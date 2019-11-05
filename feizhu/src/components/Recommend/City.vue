@@ -77,7 +77,7 @@ export default {
         }
       }
       e.currentTarget.classList.add('selected')
-      console.log(city)
+      // console.log(city)
       this.getData(city, this.currentIndex)
     },
     getData (city = '北京', index = 0) {

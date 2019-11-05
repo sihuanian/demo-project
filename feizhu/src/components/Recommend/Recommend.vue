@@ -12,7 +12,7 @@
           <img src />
           {{ field.productTitle }}
         </div>
-        <div style="padding: 0 12px; box-sizing: border-box;white-space: no-wrap; overflow:hidden;">
+        <div style="padding: 0 12px; box-sizing: border-box; min-height: 23.2px; overflow:hidden;">
           <div class="field-tag" v-for="(item, index) in field.tagList" :key="index" style="display: inline-block;">
             <img v-if="item.icon" :src="item.icon" alt="">
             <span v-else class="tag">{{ item.text }}</span>
@@ -31,6 +31,7 @@
 
 <script>
 export default {
+  name: 'Recommend',
   props: {
     field: {
       type: Object
@@ -45,7 +46,6 @@ export default {
   width 228px
   margin 0 6px 6px 0
   position relative
-  margin-top 12px
   transition box-shadow .2s ease-in
   &:hover
     box-shadow 0 2px 1px #e1e1e1
