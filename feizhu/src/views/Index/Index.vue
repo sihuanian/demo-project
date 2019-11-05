@@ -5,6 +5,7 @@
     <my-navBar />
     <my-search />
     <my-route :fights="airplanes" />
+    <my-foreign :tabs="['出境游路线']" />
   </div>
 </template>
 
@@ -14,6 +15,7 @@ import MyInput from '@/components/Input/Input.vue'
 import MyNavBar from '@/components/NavBar/NavBar.vue'
 import MySearch from '@/components/Search/Search.vue'
 import MyRoute from '@/components/AirRoute/AirRoute.vue'
+import MyForeign from '@/components/Foreign/Foreign.vue'
 // import axios from '@/api/fetch.js'
 export default {
   name: 'App',
@@ -22,7 +24,8 @@ export default {
     MyInput,
     MyNavBar,
     MySearch,
-    MyRoute
+    MyRoute,
+    MyForeign
   },
   data () {
     return {
