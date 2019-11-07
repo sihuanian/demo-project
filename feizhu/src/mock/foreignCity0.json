@@ -287,15 +287,6 @@
           "bgColor": "#FFEFF2",
           "pormotion": false,
           "className": null
-        },
-        {
-          "text": "飞猪专线",
-          "icon": "//gw.alicdn.com/tfs/TB1lAjhfuuSBuNjy1XcXXcYjFXa-98-32.png",
-          "borderColor": "#DDDDDD",
-          "textColor": "#FAFAFA",
-          "bgColor": null,
-          "pormotion": false,
-          "className": null
         }
       ],
       "titleTagList": [
