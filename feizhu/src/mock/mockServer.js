@@ -22,6 +22,12 @@ import territoryCity5 from './territoryCity5.json'
 import territoryCity6 from './territoryCity6.json'
 import territoryCity7 from './territoryCity7.json'
 import packageTour0 from './packageTour0.json'
+import packageTour1 from './packageTour1.json'
+import packageTour2 from './packageTour2.json'
+import packageTour4 from './packageTour4.json'
+import packageTour5 from './packageTour5.json'
+import packageTour6 from './packageTour6.json'
+import packageTour7 from './packageTour7.json'
 
 Mock.mock('/zhuanxian', {data: ZX.result})
 Mock.mock('/cityList', {data: cityList})
@@ -43,6 +49,12 @@ Mock.mock('/territoryCity?id=5', {data: territoryCity5})
 Mock.mock('/territoryCity?id=6', {data: territoryCity6})
 Mock.mock('/territoryCity?id=7', {data: territoryCity7})
 Mock.mock('/packageTour?id=0', {data: packageTour0})
+Mock.mock('/packageTour?id=1', {data: packageTour1})
+Mock.mock('/packageTour?id=2', {data: packageTour2})
+Mock.mock('/packageTour?id=4', {data: packageTour4})
+Mock.mock('/packageTour?id=5', {data: packageTour5})
+Mock.mock('/packageTour?id=6', {data: packageTour6})
+Mock.mock('/packageTour?id=7', {data: packageTour7})
 
 /*
 // 暴露接口: /goods
