@@ -13,7 +13,7 @@
       <div class="more">更多旅行线路</div>
     </div>
     <div class="show-view">
-      <my-territory-nav :areas="areas" />
+      <my-territory-nav :areas="areas" :url="num === 0 ? '/territoryCity' : '/packageTour'"/>
       <my-territory-main />
     </div>
   </div>
@@ -24,7 +24,6 @@ import MyTerritoryNav from './TerritoryNav'
 import MyTerritoryMain from './TerritoryMain'
 import '../../mock/mockServer'
 import axios from 'axios'
-import Bus from '@/bus/bus'
 export default {
   name: 'Territory',
   data () {

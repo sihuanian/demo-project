@@ -48,7 +48,10 @@ export default {
   },
   methods: {
     getData () {
-      axios.get('/territoryCity', { params: { id: this.num } })
+      if (this.num === 3) {
+        return
+      }
+      axios.get(this.url, { params: { id: this.num } })
         .then(res => {
           this.cityItem = res.data.data.result
           Bus.$emit('territoryCity', this.cityItem)
@@ -57,6 +60,13 @@ export default {
     change () {
       this.isShow = false
       this.getData()
+    }
+  },
+  watch: {
+    url: function (newVal, oldVal) {
+      if (newVal) {
+        this.getData()
+      }
     }
   }
 }

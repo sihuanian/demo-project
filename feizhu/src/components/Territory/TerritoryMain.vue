@@ -18,7 +18,6 @@ export default {
   },
   created () {
     Bus.$on('territoryCity', (params) => {
-
       this.datas = params
     })
   },
