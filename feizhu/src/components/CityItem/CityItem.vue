@@ -1,5 +1,5 @@
 <template>
-  <div class="city-tickets">
+  <div class="city-tickets" :title="fightInfo.depCityName + '到' + fightInfo.arrCityName">
     <div class="city-ticket">
       <div class="route">
         {{fightInfo.depCityName}}

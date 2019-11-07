@@ -1,5 +1,5 @@
 <template>
-  <div class="field-container">
+  <div class="field-container" :title="field.productTitle">
     <router-link to="/">
       <div class="destination">
         <span>{{ field.city }}</span>
