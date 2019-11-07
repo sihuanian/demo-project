@@ -47,7 +47,7 @@ export default {
     getData () {
       axios.get('/foreignCity', { params: { id: this.num } })
         .then(res => {
-          console.log(res.data.data.result)
+          // console.log(res.data.data.result)
           this.cityItem = res.data.data.result
           Bus.$emit('foreignCity', this.cityItem)
         })

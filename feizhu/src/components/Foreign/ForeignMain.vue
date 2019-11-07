@@ -4,7 +4,7 @@
       <MyRecommend v-for="(field, index) in datas" :key="index" :field="field" />
     </div>
     <div class="img">
-      <img src="https://img.alicdn.com/tfs/TB1.48Ao6TpK1RjSZKPXXa3UpXa-228-525.jpg" alt="">
+      <img src="https://img.alicdn.com/tfs/TB1.48Ao6TpK1RjSZKPXXa3UpXa-228-525.jpg" title="专线" alt="">
     </div>
   </div>
 </template>
@@ -18,10 +18,11 @@ export default {
   },
   created () {
     Bus.$on('foreignCity', (params) => {
-      console.log('params', params)
+      // console.log('params', params)
       this.datas = params
-      this.$set(this.datas, params)
-      console.log('dfdfsdfsdfsf', this.datas)
+      // this.$set(this.datas, params)
+      this.datas = params
+      // console.log('dfdfsdfsdfsf', this.datas)
     })
   },
   data () {

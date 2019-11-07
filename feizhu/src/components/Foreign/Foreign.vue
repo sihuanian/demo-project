@@ -49,7 +49,7 @@ export default {
   },
   created () {
     // this.getData()
-    axios.get('/forign')
+    axios.get('/foreign')
       .then(res => {
         // console.log(res.data.data.words)
         this.areas = res.data.data.words
@@ -81,7 +81,7 @@ export default {
     line-height 48px
     font-weight 500
     span
-      background url(https://gw.alicdn.com/tfs/TB1oLOePXXXXXbnXFXXXXXXXXXX-36-336.png) no-repeat
+      background url(https://gw.alicdn.com/tfs/TB1oLOePXXXXXbnXFXXXXXXXXXX-36-336.png) 0 -22px no-repeat
       padding-left 24px
       background-size 18px auto
       font-size 18px
