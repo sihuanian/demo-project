@@ -3,69 +3,52 @@
  */
 import Mock from 'mockjs'
 import ZX from './feizhuzhuanxian.json' // webpack在打包时自动解析为js对应的类型(对象)
-import cityList from './cityList.json'
-import forign from './foreign.json'
-import forignCity0 from './foreignCity0.json'
-import forignCity1 from './foreignCity1.json'
-import forignCity2 from './foreignCity2.json'
-import forignCity3 from './foreignCity3.json'
-import forignCity4 from './foreignCity4.json'
-import forignCity5 from './foreignCity5.json'
-import forignCity6 from './foreignCity6.json'
-import territory from './territory.json'
-import territoryCity0 from './territoryCity0.json'
-import territoryCity1 from './territoryCity1.json'
-import territoryCity2 from './territoryCity2.json'
-import territoryCity3 from './territoryCity3.json'
-import territoryCity4 from './territoryCity4.json'
-import territoryCity5 from './territoryCity5.json'
-import territoryCity6 from './territoryCity6.json'
-import territoryCity7 from './territoryCity7.json'
-import packageTour0 from './packageTour0.json'
-import packageTour1 from './packageTour1.json'
-import packageTour2 from './packageTour2.json'
-import packageTour4 from './packageTour4.json'
-import packageTour5 from './packageTour5.json'
-import packageTour6 from './packageTour6.json'
-import packageTour7 from './packageTour7.json'
 
 Mock.mock('/zhuanxian', {data: ZX.result})
-Mock.mock('/cityList', {data: cityList})
-Mock.mock('/foreign', {data: forign})
-Mock.mock('/foreignCity?id=0', {data: forignCity0})
-Mock.mock('/foreignCity?id=1', {data: forignCity1})
-Mock.mock('/foreignCity?id=2', {data: forignCity2})
-Mock.mock('/foreignCity?id=3', {data: forignCity3})
-Mock.mock('/foreignCity?id=4', {data: forignCity4})
-Mock.mock('/foreignCity?id=5', {data: forignCity5})
-Mock.mock('/foreignCity?id=6', {data: forignCity6})
-Mock.mock('/territory', {data: territory})
-Mock.mock('/territoryCity?id=0', {data: territoryCity0})
-Mock.mock('/territoryCity?id=1', {data: territoryCity1})
-Mock.mock('/territoryCity?id=2', {data: territoryCity2})
-Mock.mock('/territoryCity?id=3', {data: territoryCity3})
-Mock.mock('/territoryCity?id=4', {data: territoryCity4})
-Mock.mock('/territoryCity?id=5', {data: territoryCity5})
-Mock.mock('/territoryCity?id=6', {data: territoryCity6})
-Mock.mock('/territoryCity?id=7', {data: territoryCity7})
-Mock.mock('/packageTour?id=0', {data: packageTour0})
-Mock.mock('/packageTour?id=1', {data: packageTour1})
-Mock.mock('/packageTour?id=2', {data: packageTour2})
-Mock.mock('/packageTour?id=4', {data: packageTour4})
-Mock.mock('/packageTour?id=5', {data: packageTour5})
-Mock.mock('/packageTour?id=6', {data: packageTour6})
-Mock.mock('/packageTour?id=7', {data: packageTour7})
+Mock.mock('/cityList', {data: require('./cityList')})
+Mock.mock('/foreign', {data: require('./foreign')})
+Mock.mock('/foreignCity?id=0', {data: require('./foreignCity0')})
+Mock.mock('/foreignCity?id=1', {data: require('./foreignCity1')})
+Mock.mock('/foreignCity?id=2', {data: require('./foreignCity2')})
+Mock.mock('/foreignCity?id=3', {data: require('./foreignCity3')})
+Mock.mock('/foreignCity?id=4', {data: require('./foreignCity4')})
+Mock.mock('/foreignCity?id=5', {data: require('./foreignCity5')})
+Mock.mock('/foreignCity?id=6', {data: require('./foreignCity6')})
+Mock.mock('/territory', {data: require('./territory')})
+Mock.mock('/territoryCity?id=0', {data: require('./territoryCity0')})
+Mock.mock('/territoryCity?id=1', {data: require('./territoryCity1')})
+Mock.mock('/territoryCity?id=2', {data: require('./territoryCity2')})
+Mock.mock('/territoryCity?id=3', {data: require('./territoryCity3')})
+Mock.mock('/territoryCity?id=4', {data: require('./territoryCity4')})
+Mock.mock('/territoryCity?id=5', {data: require('./territoryCity5')})
+Mock.mock('/territoryCity?id=6', {data: require('./territoryCity6')})
+Mock.mock('/territoryCity?id=7', {data: require('./territoryCity7')})
+Mock.mock('/packageTour?id=0', {data: require('./packageTour0')})
+Mock.mock('/packageTour?id=1', {data: require('./packageTour1')})
+Mock.mock('/packageTour?id=2', {data: require('./packageTour2')})
+Mock.mock('/packageTour?id=4', {data: require('./packageTour4')})
+Mock.mock('/packageTour?id=5', {data: require('./packageTour5')})
+Mock.mock('/packageTour?id=6', {data: require('./packageTour6')})
+Mock.mock('/packageTour?id=7', {data: require('./packageTour7')})
+Mock.mock('/aroundCityList', {data: require('./aroundCityList')})
+Mock.mock('/aroundCitiesList', {data: require('./aroundCitiesList')})
+Mock.mock('/aroundCities?id=0', {data: require('./aroundCities0')})
+Mock.mock('/aroundCities?id=1', {data: require('./aroundCities1')})
+Mock.mock('/aroundCities?id=2', {data: require('./aroundCities2')})
+Mock.mock('/aroundCities?id=3', {data: require('./aroundCities3')})
+Mock.mock('/aroundCities?id=4', {data: require('./aroundCities4')})
+Mock.mock('/aroundCities?id=5', {data: require('./aroundCities5')})
+Mock.mock('/aroundCities?id=6', {data: require('./aroundCities6')})
+Mock.mock('/aroundCities?id=7', {data: require('./aroundCities7')})
+Mock.mock('/aroundCities?id=8', {data: require('./aroundCities8')})
+Mock.mock('/aroundCities?id=9', {data: require('./aroundCities9')})
+Mock.mock('/aroundCities?id=10', {data: require('./aroundCities10')})
+Mock.mock('/aroundCities?id=11', {data: require('./aroundCities11')})
+Mock.mock('/aroundCities?id=12', {data: require('./aroundCities12')})
+Mock.mock('/aroundCities?id=13', {data: require('./aroundCities13')})
+Mock.mock('/aroundCities?id=14', {data: require('./aroundCities14')})
 
 /*
 // 暴露接口: /goods
 Mock.mock('/goods', {code: 0, data: data.goods})
-
-// 暴露接口: /ratings
-Mock.mock('/ratings', {code: 0, data: data.ratings})
-
-// 暴露接口: /info
-Mock.mock('/info', {code: 0, data: data.info})
 */
-
-// console.log('执行了mockServer')
-// console.log(ZX)
