@@ -30,15 +30,6 @@
           "bgColor": "#FFEFF2",
           "pormotion": false,
           "className": null
-        },
-        {
-          "text": "飞猪专线",
-          "icon": "//gw.alicdn.com/tfs/TB1lAjhfuuSBuNjy1XcXXcYjFXa-98-32.png",
-          "borderColor": "#DDDDDD",
-          "textColor": "#FAFAFA",
-          "bgColor": null,
-          "pormotion": false,
-          "className": null
         }
       ],
       "titleTagList": [
@@ -79,15 +70,6 @@
           "borderColor": "#FF0036",
           "textColor": "#FF0036",
           "bgColor": "#FFEFF2",
-          "pormotion": false,
-          "className": null
-        },
-        {
-          "text": "飞猪专线",
-          "icon": "//gw.alicdn.com/tfs/TB1lAjhfuuSBuNjy1XcXXcYjFXa-98-32.png",
-          "borderColor": "#DDDDDD",
-          "textColor": "#FAFAFA",
-          "bgColor": null,
           "pormotion": false,
           "className": null
         }
@@ -134,7 +116,7 @@
           "className": null
         },
         {
-          "text": "今日可用",
+          "text": "今日",
           "icon": null,
           "borderColor": "#DDDDDD",
           "textColor": "#999999",
@@ -175,7 +157,7 @@
           "className": null
         },
         {
-          "text": "今日可用",
+          "text": "今日",
           "icon": null,
           "borderColor": "#DDDDDD",
           "textColor": "#999999",
@@ -216,7 +198,7 @@
           "className": null
         },
         {
-          "text": "今日可用",
+          "text": "今日",
           "icon": null,
           "borderColor": "#DDDDDD",
           "textColor": "#999999",

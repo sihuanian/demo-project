@@ -132,15 +132,6 @@
           "bgColor": "#FFEFF2",
           "pormotion": false,
           "className": null
-        },
-        {
-          "text": "飞猪专线",
-          "icon": "//gw.alicdn.com/tfs/TB1lAjhfuuSBuNjy1XcXXcYjFXa-98-32.png",
-          "borderColor": "#DDDDDD",
-          "textColor": "#FAFAFA",
-          "bgColor": null,
-          "pormotion": false,
-          "className": null
         }
       ],
       "titleTagList": []
@@ -170,15 +161,6 @@
           "icon": "//img.alicdn.com/tfs/TB1YjZ3g9f2gK0jSZFPXXXsopXa-256-40.png",
           "borderColor": null,
           "textColor": null,
-          "bgColor": null,
-          "pormotion": false,
-          "className": null
-        },
-        {
-          "text": "满2000送200",
-          "icon": "//img.alicdn.com/tfs/TB1Wbg1gVY7gK0jSZKzXXaikpXa-200-40.png",
-          "borderColor": "#FF0036",
-          "textColor": "#FF0036",
           "bgColor": null,
           "pormotion": false,
           "className": null

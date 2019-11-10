@@ -47,6 +47,18 @@ Mock.mock('/aroundCities?id=11', {data: require('./aroundCities11')})
 Mock.mock('/aroundCities?id=12', {data: require('./aroundCities12')})
 Mock.mock('/aroundCities?id=13', {data: require('./aroundCities13')})
 Mock.mock('/aroundCities?id=14', {data: require('./aroundCities14')})
+Mock.mock('/hotel?id=0', {data: require('./hotelNation0')})
+Mock.mock('/hotel?id=1', {data: require('./hotelNation1')})
+Mock.mock('/hotel?id=2', {data: require('./hotelNation2')})
+Mock.mock('/hotel?id=3', {data: require('./hotelNation3')})
+Mock.mock('/hotel?id=4', {data: require('./hotelNation4')})
+Mock.mock('/hotel?id=5', {data: require('./hotelNation5')})
+Mock.mock('/hotel?id=6', {data: require('./hotelNation6')})
+Mock.mock('/hotel?id=7', {data: require('./hotelNation7')})
+Mock.mock('/hotel?id=8', {data: require('./hotelNation8')})
+Mock.mock('/hotelFilter?id=0', {data: require('./hotelFilter0')})
+Mock.mock('/hotelForeign?id=0', {data: require('./hotelForeign0')})
+Mock.mock('/hotelForeign?id=1', {data: require('./hotelForeign1')})
 
 /*
 // 暴露接口: /goods

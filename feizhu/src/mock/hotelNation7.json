@@ -1,0 +1,50 @@
+[
+  {
+    "title": "山楂树酒店（南京夫子庙店）(原南京九月之星商务酒店）",
+    "price": "114",
+    "img_url": "//img.alicdn.com/bao/uploaded/i6/TB1XrsLbf5G3KVjSZPxMeLI3XXa_011901.jpg_230x230.jpg",
+    "level": "酒店类型：舒适型"
+  },
+  {
+    "title": "曙光薇酒店(南京夫子庙店)",
+    "price": "299",
+    "img_url": "//img.alicdn.com/bao/uploaded/i5/TB1VvX0SpXXXXXSaFXX_PVf8VXX_031211.jpg_230x230.jpg",
+    "level": "酒店类型：豪华型"
+  },
+  {
+    "title": "南京威斯汀大酒店",
+    "price": "979",
+    "img_url": "//img.alicdn.com/bao/uploaded/i1/TB1Yeeeb2b2gK0jSZK9Oc5EgFXa_113555.jpg_230x230.jpg",
+    "level": "酒店类型：五星级"
+  },
+  {
+    "title": "南京金丝利喜来登酒店",
+    "price": "696",
+    "img_url": "//img.alicdn.com/bao/uploaded/i3/TB1Ff.SbQP2gK0jSZPxe.icQpXa_015726.jpg_230x230.jpg",
+    "level": "酒店类型：五星级"
+  },
+  {
+    "title": "桔子漫心南京夫子庙酒店",
+    "price": "330",
+    "img_url": "//img.alicdn.com/bao/uploaded/i6/TB1hNwDfC_I8KJjy0FoT1CFnVXa_110102.jpg_230x230.jpg",
+    "level": "酒店类型：高档型"
+  },
+  {
+    "title": "南京金陵饭店",
+    "price": "579",
+    "img_url": "//img.alicdn.com/bao/uploaded/i5/TB1ZfIMNVXXXXbeXFXXYOQxFFXX_094928.jpg_230x230.jpg",
+    "level": "酒店类型：豪华型"
+  },
+  {
+    "title": "7天连锁酒店南京1912酒吧区浮桥地铁站店",
+    "price": "95",
+    "img_url": "//img.alicdn.com/bao/uploaded/i4/TB1rfo7NVXXXXXLXpXXt1rP7FXX_012419.jpg_230x230.jpg",
+    "level": "酒店类型：其它类型"
+  },
+  {
+    "title": "全季酒店南京新街口中心店",
+    "price": "334",
+    "img_url": "//img.alicdn.com/bao/uploaded/i2/TB1Wbj6EQzoK1RjSZFl8rGi4VXa_062045.jpg_230x230.jpg",
+    "level": "酒店类型：高档型"
+  }
+]

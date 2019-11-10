@@ -1,0 +1,50 @@
+[
+  {
+    "title": "IU酒店·北京西客站六里桥东地铁站店",
+    "level": "酒店类型：舒适型",
+    "price": 299,
+    "img_url": "//img.alicdn.com/bao/uploaded/i4/TB1zj9GCyrpK1RjSZFhBxhSdXXa_102635.jpg_230x230.jpg"
+  },
+  {
+    "title": "速8酒店北京首都机场后沙峪地铁站店",
+    "level": "酒店类型：其它类型",
+    "price": 114,
+    "img_url": "https://img.alicdn.com/bao/uploaded/i6/TB1pADbeUUIL1JjSZFrmg23xFXa_113016.jpg_230x230.jpg"
+  },
+  {
+    "title": "北京富力万丽酒店",
+    "level": "酒店类型：五星级",
+    "price": 1541,
+    "img_url": "//img.alicdn.com/bao/uploaded/i6/TB1PqsCbNz1gK0jSZSg7uKvwpXa_105711.jpg_230x230.jpg"
+  },
+  {
+    "title": "北京连升商务酒店",
+    "level": "酒店类型：其它类型",
+    "price": 149,
+    "img_url": "//img.alicdn.com/bao/uploaded/i3/TB1rEH7Cb2pK1RjSZFsWjiNlXXa_014140.jpg_230x230.jpg"
+  },
+  {
+    "title": "莫泰-北京王府井步行街店",
+    "level": "酒店类型：其它类型",
+    "price": 359,
+    "img_url": "//img.alicdn.com/bao/uploaded/i7/TB1CIynthSYBuNjSsphf.LGvVXa_010750.jpg_230x230.jpg"
+  },
+  {
+    "title": "北京角楼国际青年旅舍天安门店",
+    "level": "酒店类型：客栈公寓",
+    "price": 68,
+    "img_url": "//img.alicdn.com/bao/uploaded/i8/TB18.gax9tYBeNjSspkrmDU8VXa_031730.jpg_230x230.jpg"
+  },
+  {
+    "title": "7天连锁酒店北京花园桥地铁站店",
+    "level": "酒店类型：其它类型",
+    "price": 326,
+    "img_url": "//img.alicdn.com/bao/uploaded/i5/TB1Gg.FcUY1gK0jSZFMx6eWcVXa_093445.jpg_230x230.jpg"
+  },
+  {
+    "title": "富士酒店精选（北京万寿路店）",
+    "level": "酒店类型：舒适型",
+    "price": 319,
+    "img_url": "//img.alicdn.com/bao/uploaded/i8/TB19wu9evb2gK0jSZK9PpCEgFXa_012806.jpg_230x230.jpg"
+  }
+]

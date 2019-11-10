@@ -1,0 +1,50 @@
+[
+  {
+    "title": "宿适轻奢酒店（人民广场南京东路店）",
+    "level": "酒店类型：高档型",
+    "price": 332,
+    "img_url": "//img.alicdn.com/bao/uploaded/i1/TB1cZpfOXXXXXbtXXXXduKz.VXX_111817.jpg_230x230.jpg"
+  },
+  {
+    "title": "布丁酒店上海华师大金沙江地铁站店",
+    "level": "酒店类型：舒适型",
+    "price": 99,
+    "img_url": "//img.alicdn.com/bao/uploaded/i8/TB1wyYdjIbpK1RjSZFyJql_qFXa_014349.jpg_230x230.jpg"
+  },
+  {
+    "title": "上海威斯汀大饭店",
+    "level": "酒店类型：豪华型",
+    "price": 1854,
+    "img_url": "//img.alicdn.com/bao/uploaded/i5/TB1mYMvbUT1gK0jSZFhTTeAtVXa_094708.jpg_230x230.jpg"
+  },
+  {
+    "title": "锦江之星上海人民广场淮海东路店",
+    "level": "酒店类型：其它类型",
+    "price": 367,
+    "img_url": "//img.alicdn.com/bao/uploaded/i2/TB1_U7GeAT2gK0jSZFk_xoIQFXa_024340.jpg_230x230.jpg"
+  },
+  {
+    "title": "如家上海南京路步行街黄河路店",
+    "level": "酒店类型：其它类型",
+    "price": 201,
+    "img_url": "//img.alicdn.com/bao/uploaded/i2/TB1UtAHaBWD3KVjSZFsbcEqkpXa_060440.jpg_230x230.jpg"
+  },
+  {
+    "title": "富饶商务宾馆（外滩城隍庙店）",
+    "level": "酒店类型：其它类型",
+    "price": 154,
+    "img_url": "//img.alicdn.com/bao/uploaded/i2/TB19xlqXhD1gK0jSZFsvqYldVXa_010015.jpg_230x230.jpg"
+  },
+  {
+    "title": "上海新锦江大酒店",
+    "level": "酒店类型：五星级",
+    "price": 739,
+    "img_url": "//img.alicdn.com/bao/uploaded/i8/TB11TkWohTI8KJjSspiEFrM4FXa_115522.jpg_230x230.jpg"
+  },
+  {
+    "title": "上海龙之梦大酒店",
+    "level": "酒店类型：五星级",
+    "price": 805,
+    "img_url": "//img.alicdn.com/bao/uploaded/i1/TB1hZVKdwaH3KVjSZFjQbUFWpXa_110428.jpg_230x230.jpg"
+  }
+]

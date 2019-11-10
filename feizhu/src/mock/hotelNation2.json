@@ -1,0 +1,50 @@
+[
+  {
+    "title": "广州长隆熊猫酒店",
+    "price": "732",
+    "img_url": "//img.alicdn.com/bao/uploaded/i2/TB1rroVt0cnBKNjSZR0p2AFqFXa_105551.jpg_230x230.jpg",
+    "level": "酒店类型：舒适型"
+  },
+  {
+    "title": "广州长隆酒店",
+    "price": "729",
+    "img_url": "//img.alicdn.com/bao/uploaded/i4/TB1l_s4NVXXXXXhXXXXc2a8.XXX_070558.jpg_230x230.jpg",
+    "level": "酒店类型：豪华型"
+  },
+  {
+    "title": "广州粤海喜来登酒店",
+    "price": "1257",
+    "img_url": "//img.alicdn.com/bao/uploaded/i6/TB1xPF8b.T1gK0jSZFriBZNCXXa_095841.jpg_230x230.jpg",
+    "level": "酒店类型：豪华型"
+  },
+  {
+    "title": "广州中逸公寓",
+    "price": "58",
+    "img_url": "//img.alicdn.com/bao/uploaded/i1/TB1EaOcyKSSBuNjy0FlFevBpVXa_103123.jpg_230x230.jpg",
+    "level": "酒店类型：舒适型"
+  },
+  {
+    "title": "诺盟酒店公寓广州北京路捷登都会店",
+    "price": "329",
+    "img_url": "//img.alicdn.com/bao/uploaded/i8/TB1bONJXf2H8KJjy1zksMhr7pXa_015158.jpg_230x230.jpg",
+    "level": "酒店类型：高档型"
+  },
+  {
+    "title": "广州星豪酒店公寓白云机场店（XHJDGY）",
+    "price": "75",
+    "img_url": "//img.alicdn.com/bao/uploaded/i3/TB1RbUgOPDpK1RjSZFr36q78VXa_084542.jpg_230x230.jpg",
+    "level": "酒店类型：舒适型"
+  },
+  {
+    "title": "广州珀丽酒店",
+    "price": "330",
+    "img_url": "//img.alicdn.com/bao/uploaded/i8/TB1xaoQNVXXXXXdXFXXVGSX.XXX_070104.jpg_230x230.jpg",
+    "level": "酒店类型：高档型"
+  },
+  {
+    "title": "柏曼酒店广州塔客村地铁站店",
+    "price": "297",
+    "img_url": "//img.alicdn.com/bao/uploaded/i8/TB1_HXak8yWBuNkSmFPuOBguVXa_021018.jpg_230x230.jpg",
+    "level": "酒店类型：高档型"
+  }
+]
