@@ -7,6 +7,7 @@
     <my-route :fights="airplanes" />
     <my-foreign :tabs="['出境游路线']" />
     <my-territory :tabs="['自由行', '跟团游']" />
+    <my-around />
   </div>
 </template>
 
@@ -18,6 +19,7 @@ import MySearch from '@/components/Search/Search.vue'
 import MyRoute from '@/components/AirRoute/AirRoute.vue'
 import MyForeign from '@/components/Foreign/Foreign.vue'
 import MyTerritory from '@/components/Territory/Territory'
+import MyAround from '@/components/Around/Around'
 // import axios from '@/api/fetch.js'
 export default {
   name: 'App',
@@ -28,7 +30,8 @@ export default {
     MySearch,
     MyRoute,
     MyForeign,
-    MyTerritory
+    MyTerritory,
+    MyAround
   },
   data () {
     return {
