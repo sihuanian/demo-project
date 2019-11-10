@@ -2,7 +2,7 @@
   <div class="around-container clearfix">
     <div class="header">
       <div class="title">
-        <span>出境游</span>
+        <span>周边游 | 门票</span>
       </div>
       <div class="more">更多旅行线路</div>
     </div>
@@ -125,7 +125,7 @@ export default {
       line-height 48px
       font-weight 500
       span
-        background url(https://gw.alicdn.com/tfs/TB1oLOePXXXXXbnXFXXXXXXXXXX-36-336.png) 0 -48px no-repeat
+        background url(https://gw.alicdn.com/tfs/TB1oLOePXXXXXbnXFXXXXXXXXXX-36-336.png) 0 -71px no-repeat
         padding-left 24px
         background-size 18px auto
         font-size 18px
