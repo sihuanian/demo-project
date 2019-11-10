@@ -43,7 +43,8 @@ export default {
 <style scoped lang="stylus">
 .field-container
   float left
-  width 228px
+  width 227px
+  height 262px
   margin 0 6px 6px 0
   position relative
   transition box-shadow .2s ease-in

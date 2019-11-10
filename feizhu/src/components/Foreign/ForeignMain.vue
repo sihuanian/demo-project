@@ -36,5 +36,4 @@ export default {
 <style scoped lang="stylus">
 .recommend-container
   max-width 936px
-
 </style>
