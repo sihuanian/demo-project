@@ -19,6 +19,15 @@ module.exports = {
         pathRewrite: {
           '^/api': 'https://r.fliggy.com'
         }
+      },
+      '/around': {
+        // 跨域域名 https://r.fliggy.com
+        target: 'https://s.fliggy.com',
+        // 是否跨域
+        changeOrigin: true,
+        pathRewrite: {
+          '^/around': 'https://s.fliggy.com'
+        }
       }
     },
 
