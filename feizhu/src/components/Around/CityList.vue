@@ -33,6 +33,9 @@ export default {
     },
     url: {
       type: String
+    },
+    hint: {
+      type: Boolean
     }
   },
   computed: {
@@ -56,10 +59,15 @@ export default {
       }
       e.currentTarget.classList.add('selected')
       // this.$parent.getAround(city)
-      if (this.method && !this.url) {
+      if (this.hint && this.method) {
+        this.method(this.currentIndex)
+        return true
+      } else if (this.method && !this.url) {
         this.method(city)
+        return true
       } else if (this.method && this.url) {
         this.method(this.url + this.currentIndex)
+        return true
       }
     }
   }
@@ -91,20 +99,21 @@ export default {
       padding 3px
     .city-item
       float left
-      display: inline-block;
-      height: 20px;
-      line-height: 20px;
-      padding: 0 6px;
-      color: #3d3d3d;
+      display inline-block
+      user-select none
+      height 20px
+      line-height 20px
+      padding 0 6px
+      color #3d3d3d
       font-size 12px
   .more
     position absolute
     right 8px
     top 3px
-    font-weight: 300;
-    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAABNUlEQVR42rVWPUvDUBS9ReogLh1cVLpJt4KCFJRYEeog0qFLoVsdXITSLv6C4qZ/IEuhczfp4tJBCjYgOGbt3CmZhMjxHRBBSpL3hPvgQEjuOfflfrz7JGvhQ/YRyB0WMjUI8SYxwWe+4zfaiOvCu+waAd+IJQbIQUJbcuzEA2kaUkSyIyJys8UX0jP4IuE/IJcaqTtPEXd2Qq21mGeGxR3Rn5wwSWnG3fYRhv0KPl83XP/E/y3FrGoJxiVcXZ7gtnOI1cumi5OE2sJazjNePm+h0zpG67qGcLJt7YTawoaxMY5nRfRvqmhcnGLm79iGaUoHoe2OknkBj/cHOPM8jIZlGweh/LQ/XDB52sN53cPDoJJnG6s7UA+RepLVy1S90VSPCvXDTv+41h84+iNTf+irX1u+AQEoBcaSEpouAAAAAElFTkSuQmCC') no-repeat 100%;
-    background-size: 12px;
-    padding-right: 15px;
+    font-weight 300
+    background url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAABNUlEQVR42rVWPUvDUBS9ReogLh1cVLpJt4KCFJRYEeog0qFLoVsdXITSLv6C4qZ/IEuhczfp4tJBCjYgOGbt3CmZhMjxHRBBSpL3hPvgQEjuOfflfrz7JGvhQ/YRyB0WMjUI8SYxwWe+4zfaiOvCu+waAd+IJQbIQUJbcuzEA2kaUkSyIyJys8UX0jP4IuE/IJcaqTtPEXd2Qq21mGeGxR3Rn5wwSWnG3fYRhv0KPl83XP/E/y3FrGoJxiVcXZ7gtnOI1cumi5OE2sJazjNePm+h0zpG67qGcLJt7YTawoaxMY5nRfRvqmhcnGLm79iGaUoHoe2OknkBj/cHOPM8jIZlGweh/LQ/XDB52sN53cPDoJJnG6s7UA+RepLVy1S90VSPCvXDTv+41h84+iNTf+irX1u+AQEoBcaSEpouAAAAAElFTkSuQmCC') no-repeat 100%
+    background-size 12px
+    padding-right 15px
     color #3d3d3d
     font-size 12px
   .city-list
