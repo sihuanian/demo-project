@@ -75,7 +75,7 @@ export default {
     line-height 48px
     font-weight 500
     span
-      background url(https://gw.alicdn.com/tfs/TB1oLOePXXXXXbnXFXXXXXXXXXX-36-336.png) 0 -44px no-repeat
+      background url(https://gw.alicdn.com/tfs/TB1oLOePXXXXXbnXFXXXXXXXXXX-36-336.png) 0 -47px no-repeat
       padding-left 24px
       background-size 18px auto
       font-size 18px

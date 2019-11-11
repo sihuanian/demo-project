@@ -100,7 +100,6 @@ export default {
 <style scoped lang="stylus">
 .around-container
   background #fff
-  padding 0 12px 6px
   box-sizing border-box
   &::after
     content ''
@@ -140,6 +139,7 @@ export default {
       color #3d3d3d
       font-size 12px
   .around-top
+    padding 0 12px 6px
     &::after
       content ''
       display block
@@ -159,6 +159,7 @@ export default {
       float left
   .around-citys
     width 100%
+    padding 0 12px 6px
     &::after
       content ''
       height 0
