@@ -59,6 +59,13 @@ Mock.mock('/hotel?id=8', {data: require('./hotelNation8')})
 Mock.mock('/hotelFilter?id=0', {data: require('./hotelFilter0')})
 Mock.mock('/hotelForeign?id=0', {data: require('./hotelForeign0')})
 Mock.mock('/hotelForeign?id=1', {data: require('./hotelForeign1')})
+Mock.mock('/hotelForeign?id=2', {data: require('./hotelForeign2')})
+Mock.mock('/hotelForeign?id=3', {data: require('./hotelForeign3')})
+Mock.mock('/hotelForeign?id=4', {data: require('./hotelForeign4')})
+Mock.mock('/hotelForeign?id=5', {data: require('./hotelForeign5')})
+Mock.mock('/hotelForeign?id=6', {data: require('./hotelForeign6')})
+Mock.mock('/hotelForeign?id=7', {data: require('./hotelForeign7')})
+Mock.mock('/hotelForeign?id=8', {data: require('./hotelForeign8')})
 
 /*
 // 暴露接口: /goods

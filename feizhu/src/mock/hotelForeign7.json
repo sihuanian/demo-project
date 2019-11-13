@@ -1,0 +1,50 @@
+[
+  {
+    "title": "东京凯悦酒店",
+    "price": "¥2308起",
+    "img_url": "//img.alicdn.com/bao/uploaded/i8/TB1xCmxcuuSBuNjy1XcbmZYjFXa_012029.jpg_230x230.jpg",
+    "level": "酒店类型：豪华型"
+  },
+  {
+    "title": "东京太阳城王子大酒店",
+    "price": "¥815起",
+    "img_url": "//img.alicdn.com/bao/uploaded/i5/TB1fJcAcwaTBuNjSszfDuJgfpXa_104134.jpg_230x230.jpg",
+    "level": "酒店类型：高档型"
+  },
+  {
+    "title": "上野酒店",
+    "price": "¥429起",
+    "img_url": "//img.alicdn.com/bao/uploaded/i6/TB1jybGacuYBuNkSmRyZ03A3pXa_031805.jpg_230x230.jpg",
+    "level": "酒店类型：舒适型"
+  },
+  {
+    "title": "东京湾有明华盛顿酒店",
+    "price": "¥542起",
+    "img_url": "//img.alicdn.com/bao/uploaded/i2/TB1i.aBbKP2gK0jSZFosQCuIVXa_100922.jpg_230x230.jpg",
+    "level": "酒店类型：舒适型"
+  },
+  {
+    "title": "新宿华盛顿酒店-新馆",
+    "price": "¥551起",
+    "img_url": "//img.alicdn.com/bao/uploaded/i8/TB1ufq0iAvoK1RjSZFwnvQiCFXa_104802.jpg_230x230.jpg",
+    "level": "酒店类型：高档型"
+  },
+  {
+    "title": "银座名铁缪斯酒店",
+    "price": "¥1065起",
+    "img_url": "//img.alicdn.com/bao/uploaded/i3/TB1MbQuogHqK1RjSZFkhEd.WFXa_092138.jpg_230x230.jpg",
+    "level": "酒店类型：舒适型"
+  },
+  {
+    "title": "the b 东京 池袋酒店",
+    "price": "¥1034起",
+    "img_url": "//img.alicdn.com/bao/uploaded/i7/TB1wsJnayQnBKNjSZFmIUsApVXa_101615.jpg_230x230.jpg",
+    "level": "酒店类型：舒适型"
+  },
+  {
+    "title": "东京池袋Resol酒店",
+    "price": "暂无报价",
+    "img_url": "//img.alicdn.com/bao/uploaded/i6/TB1O6wdXRr0gK0jSZFnxinRRXXa_021500.jpg_230x230.jpg",
+    "level": "酒店类型：高档型"
+  }
+]

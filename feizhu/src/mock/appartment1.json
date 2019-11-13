@@ -1,0 +1,50 @@
+[
+  {
+    "title": "浪漫满屋客栈",
+    "price": "¥80起",
+    "img_url": "//img.alicdn.com/bao/uploaded/i4/TB1jnBggJnJ8KJjSszdRZexuFXa_050831.jpg_230x230.jpg",
+    "level": "酒店类型：其它类型"
+  },
+  {
+    "title": "丽江喜雨客栈",
+    "price": "¥80起",
+    "img_url": "//img.alicdn.com/bao/uploaded/i4/TB1BIbzwoR1BeNjy0Fmyx20wVXa_060630.jpg_230x230.jpg",
+    "level": "酒店类型：其它类型"
+  },
+  {
+    "title": "漫筑.醉梦丽江观景客栈",
+    "price": "¥128起",
+    "img_url": "//img.alicdn.com/bao/uploaded/i8/TB1hlt0d8Gw3KVjSZFwcPzQ2FXa_055547.jpg_230x230.jpg",
+    "level": "酒店类型：舒适型"
+  },
+  {
+    "title": "丽江古城一城楼客栈",
+    "price": "¥80起",
+    "img_url": "//img.alicdn.com/bao/uploaded/i3/TB1ZIEdngfH8KJjy1zcMTwTzpXa_081122.jpg_230x230.jpg",
+    "level": "酒店类型：舒适型"
+  },
+  {
+    "title": "丽江古城春暖花开客栈（四方街木府店）",
+    "price": "¥88起",
+    "img_url": "//img.alicdn.com/bao/uploaded/i1/TB1JRciaUT1gK0jSZFrEgcNCXXa_124412.jpg_230x230.jpg",
+    "level": "酒店类型：舒适型"
+  },
+  {
+    "title": "丽江古城隐蘭花园别院客栈（四方街店）",
+    "price": "¥599起",
+    "img_url": "//img.alicdn.com/bao/uploaded/i3/TB1GnNdl.z1gK0jSZLeSY29kVXa_045327.jpg_230x230.jpg",
+    "level": "酒店类型：高档型"
+  },
+  {
+    "title": "丽江鸽子青年旅舍",
+    "price": "¥15起",
+    "img_url": "//img.alicdn.com/bao/uploaded/i8/TB11SSKNFXXXXcgXVXX_A2q.VXX_112546.jpg_230x230.jpg",
+    "level": "酒店类型：其它类型"
+  },
+  {
+    "title": "丽江叠泉花园度假庭院",
+    "price": "¥205起",
+    "img_url": "//img.alicdn.com/bao/uploaded/i7/TB1uqLueuL2gK0jSZFms5Z7iXXa_045143.jpg_230x230.jpg",
+    "level": "酒店类型：高档型"
+  }
+]
