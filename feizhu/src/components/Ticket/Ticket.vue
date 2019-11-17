@@ -29,6 +29,9 @@
         </div>
       </div>
       <div v-show="showForeign" class="ticket-foreign">foreign</div>
+      <div class="swiper">
+        <Swiper />
+      </div>
     </div>
   </div>
 </template>
@@ -36,6 +39,7 @@
 <script>
 import TicketSelection from './TickSection'
 import TicketItem from './TicketItem'
+import Swiper from './Swiper'
 export default {
   data () {
     return {
@@ -50,7 +54,8 @@ export default {
   },
   components: {
     TicketSelection,
-    TicketItem
+    TicketItem,
+    Swiper
   },
   created () {
     this.getTicketInfo()
@@ -193,7 +198,6 @@ export default {
   padding 0 12px 6px
   .ticket-nation
     margin 17px 0
-    height 20px
     background url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAUCAYAAACqJ5zlAAAANElEQVR42u2QwQkAIAzEsp7dXByj7nFewUfdwUcg5Bm0CE2ysA8s2+iSlHR+IN9B3tYWxgFKY9qEmpUQuwAAAABJRU5ErkJggg==') no-repeat
     .selection
       &::after
