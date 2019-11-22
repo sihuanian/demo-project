@@ -66,6 +66,8 @@ Mock.mock('/hotelForeign?id=5', {data: require('./hotelForeign5')})
 Mock.mock('/hotelForeign?id=6', {data: require('./hotelForeign6')})
 Mock.mock('/hotelForeign?id=7', {data: require('./hotelForeign7')})
 Mock.mock('/hotelForeign?id=8', {data: require('./hotelForeign8')})
+Mock.mock('/recommend', {data: require('./recommend')})
+Mock.mock('/goodsDetail', {data: require('./goodsDetail.json')})
 
 /*
 // 暴露接口: /goods
