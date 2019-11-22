@@ -108,6 +108,14 @@ export default new Router({
       path: '/regist',
       name: 'Regist',
       component: _import_('Regist/Regist')
+    },
+    {
+      path: '/goodsDetail',
+      name: 'GoodsDetail',
+      component: _import_('GoodsDetail/GoodsDetail'),
+      meta: {
+        title: '春节预定越南芽庄旅游6天5晚自由行可升级酒店+赠专车接送机 亲子'
+      }
     }
   ]
 })
