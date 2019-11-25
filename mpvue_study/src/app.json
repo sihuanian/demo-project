@@ -1,0 +1,11 @@
+{
+  "pages": [
+    "pages/list/main",
+    "pages/detail/main",
+    "pages/index/main"
+  ],
+  "window": {
+    "navigationBarBackgroundColor":  "#40917f",
+    "navigationBarTitleText": "硅谷周刊"
+  }
+}
