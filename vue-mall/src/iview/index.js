@@ -14,7 +14,18 @@ import {
   Row,
   Col,
   Page,
-  Spin
+  Spin,
+  Alert,
+  Collapse,
+  Panel,
+  RadioGroup,
+  Radio,
+  Circle,
+  Rate,
+  TabPane,
+  Tooltip,
+  InputNumber,
+  Tabs
 } from 'view-design'
 
 Vue.component('Button', Button)
@@ -32,3 +43,14 @@ Vue.component('Row', Row)
 Vue.component('Col', Col)
 Vue.component('Page', Page)
 Vue.component('Spin', Spin)
+Vue.component('Alert', Alert)
+Vue.component('Collapse', Collapse)
+Vue.component('Panel', Panel)
+Vue.component('RadioGroup', RadioGroup)
+Vue.component('Radio', Radio)
+Vue.component('Circle', Circle)
+Vue.component('Rate', Rate)
+Vue.component('TabPane', TabPane)
+Vue.component('Tooltip', Tooltip)
+Vue.component('InputNumber', InputNumber)
+Vue.component('Tabs', Tabs)

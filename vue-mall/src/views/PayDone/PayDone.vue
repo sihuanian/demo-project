@@ -1,13 +1,23 @@
 <template>
-  <div>PayDone</div>
+  <div>
+    <div class="pay-done-box">
+      <img src="/img/pay-success.png">
+    </div>
+  </div>
 </template>
 
 <script>
 export default {
-
-}
+  name: 'PayDone'
+};
 </script>
 
-<style>
-
+<style scoped>
+.pay-done-box {
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 </style>
